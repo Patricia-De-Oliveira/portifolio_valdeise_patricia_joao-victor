@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <title>Sobre – Valdeise Lemos</title>
 
   <link rel="stylesheet" href="css/style.css">
@@ -11,8 +12,8 @@
 
 <header class="topo">
   <div class="logo">
-    <a href="index.html">Valdeise Lemos</a>
-    <span class="logo-sub">Portfólio 2025</span>
+    <h2><a href="index.html">Valdeise Lemos</a></h2>
+    <h4 class="logo-sub">Portfólio 2025</h4>
   </div>
 
   <nav class="menu">
@@ -27,23 +28,30 @@
 
   <section class="hero">
     <div class="hero-texto">
-      <p class="hero-label">Olá, eu sou</p>
+      <h2> Olá, eu sou</h2>
       <h1>Valdeise Lemos</h1>
-      <p class="hero-resumo">
-        Sou designer com foco em ilustração, embalagens e identidade visual. 
+      <h3>
+        Sou designer com foco em ilustração, embalagens e identidade visual.<br> 
         Tenho paixão por criar projetos com personalidade, cor e propósito — 
         traduzindo ideias em experiências visuais únicas.
-      </p>
-
-      <div class="hero-contatos">
-        <a class="botao-primario" href="mailto:emaildavaldeise@gmail.com">E-mail</a>
-        <a class="botao-secundario" href="https://www.instagram.com" target="_blank">Instagram</a>
+      </h3>
+      <div>
       </div>
     </div>
 
-    <div class="hero-foto">
-      <img src="img/fotos/VAL1.jpeg" alt="Foto de Valdeise Lemos">
+    <div class="hero-foto carrossel-container">
+        <div class="carrossel-slide fade">
+            <img src="img/fotos/VAL1.jpeg" alt="Foto de Valdeise Lemos 1" style="width:100%">
+        </div>
+
+        <div class="carrossel-slide fade">
+            <img src="img/fotos/VAL2.jpeg" alt="Foto de Valdeise Lemos 2" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
+
   </section>
 
   <section class="sobre-grid">
@@ -88,13 +96,47 @@
       </ul>
     </div>
 
+    <div class="card-info">
+       <h2> Contatos</h2>
+       <ul>
+        <li>
+          <a href="https://www.behance.net/valdeiselemos" target="_blank">
+            <i class="fab fa-behance"></i> Behance
+          </a>
+        </li>
+        
+        <li>
+          <a href="mailto:lemosvals@gmail.com">
+            <i class="fas fa-envelope"></i> lemosvals@gmail.com
+          </a>
+        </li>
+
+    <li>
+      <a href="https://www.linkedin.com/in/lemosvaldeise/" target="_blank">
+        <i class="fab fa-linkedin-in"></i> Valdeise Lemos
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.instagram.com/ilustrasval?igsh=MTltMXIybGNsM280ZA==" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </li>
+
+  </ul>
+</div>
+
   </section>
 
 </main>
 
 <footer>
-  <p>&copy; 2025 Valdeise Lemos — Desenvolvido por Patricia de Oliveira.</p>
+  <p>&copy; 2025 Valdeise Lemos — Desenvolvido por Patricia de Oliveira, João Victor Pereira.</p>
+  <p><a href="https://github.com/Patricia-De-Oliveira/portifolio_valdeise_patricia_joao-victor.git"> Portfólio dos desensolvedores</a></p>
 </footer>
-
+<button id="btn-topo" class="btn-topo">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<script src="js/main.js"></script>
 </body>
 </html>
